@@ -8,33 +8,66 @@ The Document-Based Query Answering System leverages the Gemini API provided by G
 
 ## Dependencies
 
-Ensure you have the following dependencies installed in your environment:
+Below are the dependencies required to run this Flask project:
 
-- `langchain_google_genai`: Python library for interfacing with Google's Generative AI platform.
-- `google.generativeai as genai`: API for accessing the Gemini model from Google's Generative AI platform.
+- `Flask`: A micro web framework for Python.
+- `render_template`: A Flask module for rendering HTML templates.
+- `request`: A Flask module for handling HTTP requests.
+- `jsonify`: A Flask module for JSON response generation.
+- `session`: A Flask module for managing user sessions.
+- `os`: A Python module for interacting with the operating system.
 - `fitz`: Python library for interacting with PDF files using the PyMuPDF library.
-- `PyMuPDF`: Python bindings for the MuPDF library, enabling PDF manipulation.
-- `frontend`: Frontend interface components for user interaction.
+- `langchain_google_genai`: Python library for interfacing with Google's Generative AI platform.
+- `google.generativeai`: API for accessing the Gemini model from Google's Generative AI platform.
+- `pptx`: Python library for working with PowerPoint files.
+- `aspose.pdf`: Python library for working with PDF files using the Aspose API.
+- `docx`: Python library for working with Word documents.
 
-You can install these dependencies via pip:
+## Installation
+
+You can install these dependencies using pip, the Python package manager. Run the following command in your terminal or command prompt:
 
 ```bash
-pip install langchain_google_genai google.generativeai fitz PyMuPDF frontend
+pip install Flask fitz langchain_google_genai pptx aspose.pdf docx
 ```
-
 ## Usage
 
-1. **Setup Google API Key**: Obtain a Google API key and set it as an environment variable named `GOOGLE_API_KEY`.
+To use this Flask project, follow these steps:
 
-2. **Input Document**: Upload a document of supported formats (.pdf, .tex, .doc, .ppt) containing relevant information.
+### 1. Install Dependencies
 
-3. **Enter Query**: Type your query into the provided input field.
+Make sure you have Python and pip installed on your system. Then, install the required dependencies using the following command:
 
-4. **Retrieve Answers**: The system will process the document and provide relevant answers based on the query.
 
-## Contributors
+### 2. Set Up Environment Variables
 
-- [Your Name] - Project Lead & Developer
-- [Contributor 1] - Developer
-- [Contributor 2] - Developer
+If your project requires any environment variables, set them up in a `.env` file at the root of your project. Here's an example `.env` file:
+
+
+### 3. Run the Flask Application
+
+Start the Flask application by running the following command:
+
+
+By default, the application will be served at `http://localhost:5000`.
+
+### 4. Access the Application
+
+Open your web browser and navigate to `http://localhost:5000` to access the application.
+
+### 5. Interact with the Application
+
+Once the application is running, you can interact with it using the provided features. For example:
+
+- Fill out forms.
+- Upload files.
+- Click on buttons or links.
+
+### 6. Explore the Codebase
+
+Feel free to explore the codebase to understand how the application works. Here are some key directories and files you may want to look at:
+
+- `app.py`: The main entry point of the Flask application.
+- `templates/`: Directory containing HTML templates used by the application.
+
 
