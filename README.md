@@ -38,16 +38,12 @@ To use this Flask project, follow these steps:
 
 Make sure you have Python and pip installed on your system. Then, install the required dependencies using the following command:
 
-
-### 2. Set Up Environment Variables
-
-If your project requires any environment variables, set them up in a `.env` file at the root of your project. Here's an example `.env` file:
-
-
-### 3. Run the Flask Application
+### 2. Run the Flask Application
 
 Start the Flask application by running the following command:
-
+```terminal
+python app.py
+```
 
 By default, the application will be served at `http://localhost:5000`.
 
